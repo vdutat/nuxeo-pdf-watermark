@@ -1,0 +1,2 @@
+nuxeo-pdf-watermark
+===================
