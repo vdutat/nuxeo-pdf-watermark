@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Nuxeo-WebModule: org.nuxeo.ecm.webengine.app.WebEngineModule;name=pdfw
+ atermark;extends=base;package=org/nuxeo/ecm/platform/addon/jaxrs
+Bundle-Vendor: Nuxeo
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Bundle-Version: 1.0.qualifier
+Bundle-Name: nuxeo-pdf-watermark
+Nuxeo-Component: OSGI-INF/extensions/org.nuxeo.ecm.platform.addon.pdfw
+ atermark.operation.PdfTextWatermark.xml
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: nuxeo-pdf-watermark
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+
