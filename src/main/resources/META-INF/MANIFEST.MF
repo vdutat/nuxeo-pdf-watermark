@@ -6,8 +6,7 @@ Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: .
 Bundle-Version: 1.0.qualifier
 Bundle-Name: nuxeo-pdf-watermark
-Nuxeo-Component: OSGI-INF/extensions/org.nuxeo.ecm.platform.addon.pdfw
- atermark.operation.PdfTextWatermark.xml
+Nuxeo-Component: OSGI-INF/extensions/org.nuxeo.ecm.platform.addon.pdfwatermark.operation.PdfTextWatermark.xml,OSGI-INF/extensions/org.nuxeo.ecm.platform.addon.pdfwatermark.operation.PdfImageWatermark.xml
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: nuxeo-pdf-watermark
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7

@@ -72,13 +72,13 @@ public class PdfTextWatermark {
     @Param(name = "fontsize", required = false)
     protected String fontSize = "25";
 
-    @Param(name = "color", required = false)
+    @Param(name = "color", required = false, description = "Text color (default: FFCC00/orange yellow)")
     protected String color = "FFCC00";
 
     @Param(name = "angle", required = false, widget = Constants.W_OPTION, values = { "0", "45", "90", "135", "225", "270", "315" })
     protected String angle = "0";
 
-    @Param(name = "alpha", required = false)
+    @Param(name = "alpha", required = false, description = "Transparency/opacity")
     protected String alpha = "80";
 
     @Param(name = "multiplicity", required = false, widget = Constants.W_OPTION, values = { "single", "tiled" })
@@ -86,7 +86,6 @@ public class PdfTextWatermark {
 
     @OperationMethod
     public Blob run(Blob input) throws IOException, COSVisitorException {
-        multiplicity = "tiled";
         File file = File.createTempFile("nxops-" + ID.toLowerCase() + "-", ".tmp");
         FileOutputStream out = new FileOutputStream(file);
         Framework.trackFile(file, file);
